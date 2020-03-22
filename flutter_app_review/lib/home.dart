@@ -62,16 +62,13 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
           bottom: TabBar(
             indicator: RoundUnderlineTabIndicator(
-                borderSide: BorderSide(
-              width: 3.5,
-              color: Color(0xff00cdd7),
-            )),
-            labelColor: Color(0xff333333),
+                borderSide: BorderSide(width: 3.5, color: Color(0xFFc33764))),
+            labelColor: Color(0xFFc33764),
             labelStyle: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
             labelPadding: EdgeInsets.only(left: 0, right: 0),
-            unselectedLabelColor: Color(0xff333333),
+            unselectedLabelColor: Color(0xff093637),
             unselectedLabelStyle:
-                TextStyle(fontSize: 13, fontWeight: FontWeight.normal),
+                TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
             tabs: [
               VgTab(
                 text: "Flutter基础",
@@ -123,12 +120,12 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Row(
             children: [
               IconButton(
-                icon: Icon(Icons.home),
+                icon: Icon(Icons.home, color: Color(0xFFc33764)),
                 onPressed: () {},
               ),
               SizedBox(), //中间位置空出
               IconButton(
-                icon: Icon(Icons.business),
+                icon: Icon(Icons.business, color: Color(0xFFc33764)),
                 onPressed: () {},
               ),
             ],
@@ -136,7 +133,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
+          child: Icon(Icons.add, color: Color(0xFFc33764)),
+          backgroundColor: Theme.of(context).primaryColor,
           onPressed: () {},
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

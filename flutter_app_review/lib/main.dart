@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.yellow,
           highlightColor: Colors.white,
-          splashColor: Colors.redAccent,
+          splashColor: Color(0xFF44a08d),
           accentColor: Colors.blue
 //        splashFactory: InteractiveInkFeatureFactory.
           ),
