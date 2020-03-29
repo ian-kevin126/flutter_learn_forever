@@ -6,14 +6,15 @@ Widget commonRouteFunc(context, title, Widget Demo) {
     margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
     padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
     decoration: BoxDecoration(
-        color: Colors.black87,
+        color: Color(0xFF27262B),
         borderRadius: BorderRadius.all(Radius.circular(30.0))),
     child: InkWell(
       onTap: () {
         goto(context, Demo);
       },
       child: Text(title,
-          style: TextStyle(color: Colors.white70, fontWeight: FontWeight.bold)),
+          style:
+              TextStyle(color: Color(0xFFDBA589), fontWeight: FontWeight.bold)),
     ),
   );
 }
@@ -35,10 +36,11 @@ Widget commonTitle(title) {
           width: 5.0,
           decoration: BoxDecoration(
               color: Colors.green,
-              borderRadius: BorderRadius.all(Radius.circular(3.0))
-          ),
+              borderRadius: BorderRadius.all(Radius.circular(3.0))),
         ),
-        SizedBox(width: 6,),
+        SizedBox(
+          width: 6,
+        ),
         Text(
           title,
           style: TextStyle(

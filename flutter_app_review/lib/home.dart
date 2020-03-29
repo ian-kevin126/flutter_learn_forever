@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
             labelColor: Color(0xFFc33764),
             labelStyle: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
             labelPadding: EdgeInsets.only(left: 0, right: 0),
-            unselectedLabelColor: Color(0xff093637),
+            unselectedLabelColor: Colors.white70,
             unselectedLabelStyle:
                 TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
             tabs: [
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.brightness_5),
               ),
               VgTab(
-                text: "Challenge",
+                text: "Challenges",
                 icon: Icon(Icons.brightness_4),
               ),
               VgTab(
