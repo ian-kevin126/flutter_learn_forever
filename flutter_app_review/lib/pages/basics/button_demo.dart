@@ -222,7 +222,7 @@ class _ButtonDemoState extends State<ButtonDemo> {
                   width: 20,
                 ),
                 Expanded(
-                  flex: 3,
+                  flex: 2,
                   child: RaisedButton.icon(
                       onPressed: () {},
                       shape: StadiumBorder(),
