@@ -2,12 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class StreamDemo extends StatefulWidget {
+class StreamDemoTwo extends StatefulWidget {
   @override
-  _StreamDemoState createState() => _StreamDemoState();
+  _StreamDemoTwoState createState() => _StreamDemoTwoState();
 }
 
-class _StreamDemoState extends State<StreamDemo> {
+class _StreamDemoTwoState extends State<StreamDemoTwo> {
   StreamSubscription _streamSubscription;
 
   @override

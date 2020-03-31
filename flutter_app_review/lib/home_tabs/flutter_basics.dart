@@ -14,8 +14,9 @@ import 'package:flutterappreview/pages/basics/state_management/provider_demo.dar
 import 'package:flutterappreview/pages/basics/state_management/scoped_model.dart';
 import 'package:flutterappreview/pages/basics/state_management/scoped_model/index.dart';
 import 'package:flutterappreview/pages/basics/state_management/state_management_demo.dart';
-import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo.dart';
-import 'package:flutterappreview/pages/basics/state_management/stream/stream_test.dart';
+import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo-three.dart';
+import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo_two.dart';
+import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo_one.dart';
 import 'package:flutterappreview/pages/basics/stepper_demo.dart';
 import 'package:flutterappreview/pages/basics/text_field_demo.dart';
 
@@ -51,8 +52,9 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '3.ScopedModelDemo1', ScopedModelDemo()),
             commonRouteFunc(context, '4.ScopedModelDemo2', MyScopedModelDemo()),
             commonRouteFunc(context, '5.ProviderDemo', ProviderDemo()),
-            commonRouteFunc(context, '6.StreamDemo1', StreamTest()),
-            commonRouteFunc(context, '7.StreamDemo2', StreamDemo()),
+            commonRouteFunc(context, '6.StreamDemo1', StreamDemoOne()),
+            commonRouteFunc(context, '7.StreamDemo2', StreamDemoTwo()),
+            commonRouteFunc(context, '8.StreamDemo3', StreamDemoThree()),
           ],
         ),
       ),

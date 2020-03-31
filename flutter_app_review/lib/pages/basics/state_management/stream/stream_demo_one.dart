@@ -8,12 +8,12 @@ class Good {
   Good(this.name, this.age);
 }
 
-class StreamTest extends StatefulWidget {
+class StreamDemoOne extends StatefulWidget {
   @override
-  _StreamTestState createState() => _StreamTestState();
+  _StreamDemoOneState createState() => _StreamDemoOneState();
 }
 
-class _StreamTestState extends State<StreamTest> {
+class _StreamDemoOneState extends State<StreamDemoOne> {
   Good person = Good('JSShou', 10);
   final StreamController<Good> _streamController = StreamController<Good>.broadcast();
 
