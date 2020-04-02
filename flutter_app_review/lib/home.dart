@@ -70,11 +70,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.brightness_6),
               ),
               VgTab(
-                text: "Flutter进阶",
+                text: "Flutter高级",
                 icon: Icon(Icons.brightness_5),
               ),
               VgTab(
-                text: "Flutter高级",
+                text: "Flutter专家",
                 icon: Icon(Icons.brightness_7),
               ),
               VgTab(
@@ -105,8 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             FlutterBasics(),
             FlutterAdvanced(),
+            FlutterExpert(),
             FlutterUIChallenge(),
-            FlutterFinalFantasy(),
           ],
         ),
         bottomNavigationBar: BottomAppBar(

@@ -12,12 +12,12 @@ import 'package:flutterappreview/pages/basics/sliver_family.dart';
 import 'package:flutterappreview/pages/basics/stepper_demo.dart';
 import 'package:flutterappreview/pages/basics/text_field_demo.dart';
 
-class FlutterFinalFantasy extends StatefulWidget {
+class FlutterExpert extends StatefulWidget {
   @override
-  _FlutterFinalFantasyState createState() => _FlutterFinalFantasyState();
+  _FlutterExpertState createState() => _FlutterExpertState();
 }
 
-class _FlutterFinalFantasyState extends State<FlutterFinalFantasy> {
+class _FlutterExpertState extends State<FlutterExpert> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
