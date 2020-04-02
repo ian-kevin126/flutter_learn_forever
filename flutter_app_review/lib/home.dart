@@ -74,12 +74,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.brightness_5),
               ),
               VgTab(
-                text: "Challenges",
-                icon: Icon(Icons.brightness_4),
+                text: "Flutter高级",
+                icon: Icon(Icons.brightness_7),
               ),
               VgTab(
-                text: "最终幻想",
-                icon: Icon(Icons.brightness_7),
+                text: "UI-Challenges",
+                icon: Icon(Icons.brightness_4),
               ),
             ],
           ),
