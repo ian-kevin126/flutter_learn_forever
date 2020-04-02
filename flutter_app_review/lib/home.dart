@@ -3,27 +3,8 @@ import 'package:flutter/material.dart';
 import 'home_tabs/components/round_tab_indicator.dart';
 import 'home_tabs/flutter_advanced.dart';
 import 'home_tabs/flutter_basics.dart';
-import 'home_tabs/flutter_final_fantasy.dart';
+import 'home_tabs/flutter_expert.dart';
 import 'home_tabs/flutter_ui_challenge.dart';
-
-const _tabs = [
-  Tab(
-    icon: Icon(
-      Icons.account_balance,
-    ),
-  ),
-  Tab(
-    icon: Icon(
-      Icons.four_k,
-    ),
-  ),
-  Tab(
-    child: Align(
-      alignment: Alignment.center,
-      child: Icon(Icons.account_balance),
-    ),
-  ),
-];
 
 const textStyle = TextStyle(fontSize: 12.0, color: Colors.white, fontFamily: 'OpenSans', fontWeight: FontWeight.w600);
 

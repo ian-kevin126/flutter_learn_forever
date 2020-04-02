@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FlutterAdvanced extends StatefulWidget {
+class FlutterExpert extends StatefulWidget {
   @override
-  _FlutterAdvancedState createState() => _FlutterAdvancedState();
+  _FlutterExpertState createState() => _FlutterExpertState();
 }
 
-class _FlutterAdvancedState extends State<FlutterAdvanced> {
+class _FlutterExpertState extends State<FlutterExpert> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

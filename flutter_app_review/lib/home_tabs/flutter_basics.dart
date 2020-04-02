@@ -7,6 +7,7 @@ import 'package:flutterappreview/pages/basics/data_table_demo.dart';
 import 'package:flutterappreview/pages/basics/dialog_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC.dart';
 import 'package:flutterappreview/pages/basics/state_management/Bloc/bloc.dart';
+import 'package:flutterappreview/pages/basics/state_management/Bloc/bloc_demo_one.dart';
 import 'package:flutterappreview/pages/basics/state_management/inherited_widget_demo.dart';
 import 'package:flutterappreview/pages/basics/input_widget_demo.dart';
 import 'package:flutterappreview/pages/basics/sliver_demo.dart';
@@ -16,6 +17,7 @@ import 'package:flutterappreview/pages/basics/state_management/scoped_model.dart
 import 'package:flutterappreview/pages/basics/state_management/scoped_model/index.dart';
 import 'package:flutterappreview/pages/basics/state_management/state_management_demo.dart';
 import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo-three.dart';
+import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo_four.dart';
 import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo_two.dart';
 import 'package:flutterappreview/pages/basics/state_management/stream/stream_demo_one.dart';
 import 'package:flutterappreview/pages/basics/stepper_demo.dart';
@@ -56,7 +58,9 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '6.StreamDemo1', StreamDemoOne()),
             commonRouteFunc(context, '7.StreamDemo2', StreamDemoTwo()),
             commonRouteFunc(context, '8.StreamDemo3', StreamDemoThree()),
-            commonRouteFunc(context, '9.BlocDemo', BlocDemo()),
+            commonRouteFunc(context, '9.StreamDemo4', StreamDemoFour()),
+            commonRouteFunc(context, '10.BlocDemo', BlocDemo()),
+            commonRouteFunc(context, '11.BlocDemo_1', BlocDemoOne()),
           ],
         ),
       ),
