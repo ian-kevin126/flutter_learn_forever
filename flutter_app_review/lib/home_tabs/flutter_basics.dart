@@ -6,6 +6,7 @@ import 'package:flutterappreview/pages/basics/card_demo.dart';
 import 'package:flutterappreview/pages/basics/data_table_demo.dart';
 import 'package:flutterappreview/pages/basics/dialog_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC.dart';
+import 'package:flutterappreview/pages/basics/state_management/Bloc/bloc.dart';
 import 'package:flutterappreview/pages/basics/state_management/inherited_widget_demo.dart';
 import 'package:flutterappreview/pages/basics/input_widget_demo.dart';
 import 'package:flutterappreview/pages/basics/sliver_demo.dart';
@@ -55,6 +56,7 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '6.StreamDemo1', StreamDemoOne()),
             commonRouteFunc(context, '7.StreamDemo2', StreamDemoTwo()),
             commonRouteFunc(context, '8.StreamDemo3', StreamDemoThree()),
+            commonRouteFunc(context, '9.BlocDemo', BlocDemo()),
           ],
         ),
       ),

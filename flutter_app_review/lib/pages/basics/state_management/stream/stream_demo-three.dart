@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class StreamDemoThree extends StatefulWidget {
@@ -6,21 +8,37 @@ class StreamDemoThree extends StatefulWidget {
 }
 
 class _StreamDemoThreeState extends State<StreamDemoThree> {
+  int _counter = 0;
+  final StreamController<int> _streamController = StreamController<int>();
+
+  @override
+  void dispose() {
+    _streamController.close();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('StreamDemo3'),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[],
+        appBar: AppBar(
+          title: Text('StreamDemo3'),
         ),
-      ),
-    );
+        body: Center(
+          child: StreamBuilder<int>(
+              stream: _streamController.stream,
+              initialData: _counter,
+              builder: (BuildContext context, AsyncSnapshot<int> snapshot) {
+                return Text('You hit me: ${snapshot.data} times');
+              }),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: const Icon(Icons.add),
+          onPressed: () {
+            _streamController.sink.add(++_counter);
+          },
+        ));
   }
 }
-
 
 /// 1.Stream可以称之为管道，为了控制Stream，我们通常使用StreamController， 为了在Stream中插入一些东西，StreamController公开了一个名为
 /// StreamSink的“入口”，可以通过sink属性访问。Stream的流出方式是由StreamController通过stream属性暴露的。
