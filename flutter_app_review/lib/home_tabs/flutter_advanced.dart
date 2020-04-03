@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterappreview/common/common.dart';
+import 'package:flutterappreview/pages/basics/flutter_advanced/TabBarViewDemo/tabbarview_main.dart';
 
 class FlutterAdvanced extends StatefulWidget {
   @override
@@ -13,7 +15,7 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
         body: SingleChildScrollView(
       child: Wrap(
         children: <Widget>[
-//              commonRouteFunc(context, '1.Sliver家族', SliverFamily()),
+          commonRouteFunc(context, '1.TabBar切换tab避免initState重复调用', TabBarDemo()),
         ],
       ),
     ));

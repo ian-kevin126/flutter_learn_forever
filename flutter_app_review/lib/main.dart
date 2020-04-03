@@ -15,6 +15,14 @@ void main() {
   ));
 }
 
+//应用顶层
+//void main() {
+//  final store =
+//  Store<CountState>(reducer, initialState: CountState.initState());
+//  runApp(new MyApp(store));
+//}
+
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
