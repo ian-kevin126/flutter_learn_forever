@@ -8,8 +8,8 @@ class StreamDemoTwo extends StatefulWidget {
 }
 
 class _StreamDemoTwoState extends State<StreamDemoTwo> {
-  StreamSubscription _streamSubscription;
   StreamController _streamDemo;
+  StreamSubscription _streamSubscription;
   StreamSink _sinkDemo;
   String _data = '...';
 

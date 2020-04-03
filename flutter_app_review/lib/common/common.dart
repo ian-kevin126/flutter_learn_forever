@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 Widget commonRouteFunc(context, title, Widget Demo) {
   return Container(
     margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
-    padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
+    padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
     decoration: BoxDecoration(color: Color(0xFF27262B), borderRadius: BorderRadius.all(Radius.circular(30.0))),
     child: InkWell(
       onTap: () {

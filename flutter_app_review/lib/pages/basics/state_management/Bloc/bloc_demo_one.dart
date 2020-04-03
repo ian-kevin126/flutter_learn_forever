@@ -51,7 +51,7 @@ class IncrementBloc implements BlocBase {
   int _counter;
 
   //
-  // Stream to handle the counter
+  // Stream来处理计数器
   //
   StreamController<int> _counterController = StreamController<int>();
 
@@ -60,7 +60,7 @@ class IncrementBloc implements BlocBase {
   Stream<int> get outCounter => _counterController.stream;
 
   //
-  // Stream to handle the action on the counter
+  // Stream来处理计数器上的操作
   //
   StreamController _actionController = StreamController();
 
