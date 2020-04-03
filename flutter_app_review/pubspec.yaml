@@ -16,6 +16,14 @@ dependencies:
   scoped_model: ^1.0.1
   redux: ^4.0.0
   flutter_redux: ^0.6.0
+  material_search: ^0.2.7
+  dynamic_theme: ^1.0.1
+  eva_icons_flutter: ^2.0.0
+  flare_flutter: ^1.8.1
+  gradient_widgets: ^0.5.0
+  liquid_swipe: '1.2.0'
+  url_launcher: ^5.2.4
+  percent_indicator: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -25,3 +33,55 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - assets/credits/
+    - assets/flare/
+    - assets/icon/
+    - assets/music/
+    - assets/images/
+    - images/
+    - assets/adidas.png
+    - assets/360.png
+    - assets/cart.png
+    - assets/sound_wave.jpg
+    - assets/my_waves.jpg
+    - assets/some_one_like_you.jpg
+    - assets/24K_carat_magic.jpg
+    - assets/sunflower.jpg
+    - assets/solo_dance.jpg
+
+  fonts:
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik/Rubik-Regular.ttf
+        - asset: assets/fonts/Rubik/Rubik-Medium.ttf
+        - asset: assets/fonts/Rubik/Rubik-Bold.ttf
+        - asset: assets/fonts/Rubik/Rubik-Italic.ttf
+          style: italic
+
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/RobotoMono/RobotoMono-Regular.ttf
+        - asset: assets/fonts/RobotoMono/RobotoMono-Medium.ttf
+        - asset: assets/fonts/RobotoMono/RobotoMono-Bold.ttf
+
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand/Quicksand-Medium.ttf
+        - asset: assets/fonts/Quicksand/Quicksand-Bold.ttf
+
+    - family: Poppins
+      fonts:
+        - asset: fonts/poppins/Poppins-Regular.ttf
+        - asset: fonts/poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: fonts/poppins/Poppins-Medium.ttf
+        - asset: fonts/poppins/Poppins-Italic.ttf
+          style: italic
+
+    - family: NotoSans
+      fonts:
+        - asset: assets/NotoSans-Regular.ttf
+        - asset: assets/NotoSans-Bold.ttf
