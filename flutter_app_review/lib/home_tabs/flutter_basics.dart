@@ -15,7 +15,9 @@ import 'package:flutterappreview/pages/basics/state_management/inherited_widget_
 import 'package:flutterappreview/pages/basics/flutter_MDC/input_widget_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/sliver_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/sliver_family.dart';
+import 'package:flutterappreview/pages/basics/state_management/provider/index.dart';
 import 'package:flutterappreview/pages/basics/state_management/provider_demo.dart';
+import 'package:flutterappreview/pages/basics/state_management/redux/index.dart';
 import 'package:flutterappreview/pages/basics/state_management/scoped_model.dart';
 import 'package:flutterappreview/pages/basics/state_management/scoped_model/index.dart';
 import 'package:flutterappreview/pages/basics/state_management/state_management_demo.dart';
@@ -57,13 +59,15 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '2.InheritedWidget', InheritedWidgetDemo()),
             commonRouteFunc(context, '3.ScopedModel_1', ScopedModelDemo()),
             commonRouteFunc(context, '4.ScopedModel_2', MyScopedModelDemo()),
-            commonRouteFunc(context, '5.Provider', ProviderDemo()),
-            commonRouteFunc(context, '6.Stream_1', StreamDemoOne()),
-            commonRouteFunc(context, '7.Stream_2', StreamDemoTwo()),
-            commonRouteFunc(context, '8.Stream_3', StreamDemoThree()),
-            commonRouteFunc(context, '9.Stream_4', StreamDemoFour()),
-            commonRouteFunc(context, '10.Bloc_1', BlocDemo()),
-            commonRouteFunc(context, '11.Bloc_2', BlocDemoOne()),
+            commonRouteFunc(context, '5.Stream_1', StreamDemoOne()),
+            commonRouteFunc(context, '6.Stream_2', StreamDemoTwo()),
+            commonRouteFunc(context, '7.Stream_3', StreamDemoThree()),
+            commonRouteFunc(context, '8.Stream_4', StreamDemoFour()),
+            commonRouteFunc(context, '9.Bloc_1', BlocDemo()),
+            commonRouteFunc(context, '10.Bloc_2', BlocDemoOne()),
+            commonRouteFunc(context, '11.Redux', ReduxDemo()),
+            commonRouteFunc(context, '12.Provider', ProviderDemo()),
+            commonRouteFunc(context, '13.Provider', MyProvider()),
             commonCategoryTitle(context, '三  网络请求'),
             commonRouteFunc(context, '1.Http', HttpDemo()),
             commonRouteFunc(context, '2.HttpTest', HttpTestDemo()),
