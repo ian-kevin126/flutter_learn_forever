@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterappreview/common/common.dart';
+import 'package:flutterappreview/pages/basics/animations/Animation_two.dart';
 import 'package:flutterappreview/pages/basics/animations/animation_basics.dart';
+import 'package:flutterappreview/pages/basics/animations/animation_one.dart';
+import 'package:flutterappreview/pages/basics/animations/staggered_animation.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/button_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/card_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/data_table_demo.dart';
@@ -9,6 +12,21 @@ import 'package:flutterappreview/pages/basics/flutter_MDC/dialog_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/flutter_MDC.dart';
 import 'package:flutterappreview/pages/basics/http_request/http_demo.dart';
 import 'package:flutterappreview/pages/basics/http_request/http_test.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/backdrop_filter_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/clip_xxx_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/custom_paint_page2.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/custom_painter_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/custom_scroll_view_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/file_demo.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/http_demo.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/list_view_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/notification_demo.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/page_view_demo.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/scanffold_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/single_child_scroll_view_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/splash_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/tab_page.dart';
+import 'package:flutterappreview/pages/basics/more_thinigs/test_page.dart';
 import 'package:flutterappreview/pages/basics/state_management/Bloc/bloc.dart';
 import 'package:flutterappreview/pages/basics/state_management/Bloc/bloc_demo_one.dart';
 import 'package:flutterappreview/pages/basics/state_management/inherited_widget_demo.dart';
@@ -54,6 +72,12 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '9.Card', CardDemo()),
             commonRouteFunc(context, '10.Stepper', StepperDemo()),
             commonRouteFunc(context, '11.Stepper', StepperDemo()),
+            commonRouteFunc(context, '12.ListView', ListViewPage()),
+            commonRouteFunc(context, '13.PageView', PageViewPage()),
+            commonRouteFunc(context, '14.Scaffold', ScaffoldPage()),
+            commonRouteFunc(context, '15.SingleChildScrollView', SingleChildScrollViewPage()),
+            commonRouteFunc(context, '16.Splash', SplashPage()),
+            commonRouteFunc(context, '17.Tab', TabPage()),
             commonCategoryTitle(context, '二  状态管理'),
             commonRouteFunc(context, '1.StateManagement', StateManagementDemo()),
             commonRouteFunc(context, '2.InheritedWidget', InheritedWidgetDemo()),
@@ -71,8 +95,27 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonCategoryTitle(context, '三  网络请求'),
             commonRouteFunc(context, '1.Http', HttpDemo()),
             commonRouteFunc(context, '2.HttpTest', HttpTestDemo()),
+            commonRouteFunc(context, '3.httpDemo', HttpDemoPage()),
             commonCategoryTitle(context, '四  Flutter动画'),
             commonRouteFunc(context, '1.AnimationBasics', AnimationBasics()),
+            commonRouteFunc(context, '2.Animation_1', AnimOnePage()),
+            commonRouteFunc(context, '3.Animation_2', AnimTwoPage()),
+            commonRouteFunc(context, '4.组合动画', StaggeredAnimationDemo()),
+//            commonRouteFunc(context, '2.Animation_one', AnimOnePage()),
+//            commonRouteFunc(context, '2.Animation_one', AnimOnePage()),
+//            commonRouteFunc(context, '2.Animation_one', AnimOnesPage()),
+//            commonRouteFunc(context, '2.Animation_one', AnimOnePage()),
+//            commonRouteFunc(context, '2.Animation_one', AnimOnePage()),
+//            commonRouteFunc(context, '2.Animation_one', AnimOnePage()),
+            commonCategoryTitle(context, '五  其他'),
+            commonRouteFunc(context, '1.页面返回滤镜效果', BackDropFilterPage()),
+            commonRouteFunc(context, '2.ClipXXXPage', ClipXXXPage()),
+            commonRouteFunc(context, '3.CustomPainter_1', CustomPainterPage()),
+            commonRouteFunc(context, '4.CustomPainter_2', CustomPainterPage2()),
+            commonRouteFunc(context, '5.CustomScrollView', CustomScrollViewPage()),
+            commonRouteFunc(context, '6.FileDemo', FileDemoPage()),
+            commonRouteFunc(context, '7.Notification', NotificationPage()),
+            commonRouteFunc(context, '8.TestPage', TestPage()),
           ],
         ),
       ),
