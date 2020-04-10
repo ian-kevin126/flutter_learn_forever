@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterappreview/common/common.dart';
+import 'package:flutterappreview/pages/flutter_ui_challenge/dot_dashed_border.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/shopping_cart/menu_home.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/simple_ui/adidas_ui.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/dashboard_reborn/dashboard_reborn.dart';
@@ -38,6 +39,7 @@ class _FlutterUIChallengeState extends State<FlutterUIChallenge> {
           commonRouteFunc(context, '10.WhiteBoardDemo', WhiteBoardDemo()),
           commonRouteFunc(context, '11.RandomWordsDemo', RandomWords()),
           commonRouteFunc(context, '12.Shopping', MenuHomePage()),
+          commonRouteFunc(context, '13.dot&dashedBorder', DottedAndDashedBorderDemo()),
         ],
       ),
     ));

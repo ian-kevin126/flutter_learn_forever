@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutterappreview/home.dart';
@@ -35,7 +36,10 @@ class MyApp extends StatelessWidget {
             localizationsDelegates: [
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
+              DefaultCupertinoLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
             ],
+            locale: Locale('en', 'US'),
             supportedLocales: [
               const Locale('en', 'US'), // English
               const Locale('th', 'TH'), // Thai
