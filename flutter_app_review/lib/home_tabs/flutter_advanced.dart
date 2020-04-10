@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterappreview/common/common.dart';
 import 'package:flutterappreview/pages/advanced/Bloc/counter_bloc.dart';
 import 'package:flutterappreview/pages/advanced/canvas/canvas_test.dart';
+import 'package:flutterappreview/pages/advanced/carousel_demo.dart';
 import 'package:flutterappreview/pages/advanced/screenshot_share.dart';
 import 'package:flutterappreview/pages/flutter_advanced/TabBarViewDemo/tabbarview_main.dart';
 
@@ -22,6 +23,8 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
           commonRouteFunc(context, '2.Bloc', BlocDemo()),
           commonRouteFunc(context, '3.canvas', CustomPaintRoute()),
           commonRouteFunc(context, '4.分享截图', ScreenShotShare()),
+          commonRouteFunc(context, '5.轮播图', CarouselDemo()),
+//          commonRouteFunc(context, '6.日期筛选', DatePickerWidget()),
         ],
       ),
     ));

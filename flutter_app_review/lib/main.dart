@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutterappreview/home.dart';
 import 'package:flutterappreview/pages/basics/state_management/model/list_model.dart';
 import 'package:flutterappreview/pages/basics/state_management/scoped_model/store/index.dart';
@@ -22,7 +23,6 @@ void main() {
 //  runApp(new MyApp(store));
 //}
 
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -32,6 +32,14 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
+            localizationsDelegates: [
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+            ],
+            supportedLocales: [
+              const Locale('en', 'US'), // English
+              const Locale('th', 'TH'), // Thai
+            ],
             theme: ThemeData(
                 primarySwatch: Colors.teal,
                 // 取消TabBar的切换效果
