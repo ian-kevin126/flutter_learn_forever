@@ -11,6 +11,9 @@ import 'package:flutterappreview/pages/basics/flutter_MDC/data_table_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/dialog_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/flutter_MDC.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/panel_demo.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/scollable_test.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/scroll_controller_test.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/willpopscope.dart';
 import 'package:flutterappreview/pages/basics/http_request/http_demo.dart';
 import 'package:flutterappreview/pages/basics/http_request/http_test.dart';
 import 'package:flutterappreview/pages/basics/more_thinigs/backdrop_filter_page.dart';
@@ -80,6 +83,9 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '16.Splash', SplashPage()),
             commonRouteFunc(context, '17.Tab', TabPage()),
             commonRouteFunc(context, '18.Panel', PanelDemo()),
+            commonRouteFunc(context, '19.Scrollable', ScrollableDemo()),
+            commonRouteFunc(context, '20.WillPopScope', WillPopScopeDemo()),
+            commonRouteFunc(context, '21.ScrollableController', ScrollableControllerDemo()),
             commonCategoryTitle(context, '二  状态管理'),
             commonRouteFunc(context, '1.StateManagement', StateManagementDemo()),
             commonRouteFunc(context, '2.InheritedWidget', InheritedWidgetDemo()),
