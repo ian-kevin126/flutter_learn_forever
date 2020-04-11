@@ -13,6 +13,8 @@ import 'package:flutterappreview/pages/basics/flutter_MDC/flutter_MDC.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/panel_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/scollable_test.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/scroll_controller_test.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/toast_demo.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/transform_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/willpopscope.dart';
 import 'package:flutterappreview/pages/basics/http_request/http_demo.dart';
 import 'package:flutterappreview/pages/basics/http_request/http_test.dart';
@@ -86,6 +88,8 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '19.Scrollable', ScrollableDemo()),
             commonRouteFunc(context, '20.WillPopScope', WillPopScopeDemo()),
             commonRouteFunc(context, '21.ScrollableController', ScrollableControllerDemo()),
+            commonRouteFunc(context, '22.ToastDemo', ToastDemo()),
+            commonRouteFunc(context, '23.Transform', TransformDemo()),
             commonCategoryTitle(context, '二  状态管理'),
             commonRouteFunc(context, '1.StateManagement', StateManagementDemo()),
             commonRouteFunc(context, '2.InheritedWidget', InheritedWidgetDemo()),
