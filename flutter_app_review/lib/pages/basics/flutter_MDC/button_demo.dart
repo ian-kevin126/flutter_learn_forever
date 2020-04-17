@@ -1,5 +1,11 @@
+import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:nice_button/nice_button.dart';
+import 'package:pimp_my_button/pimp_my_button.dart';
+import 'package:slider_button/slider_button.dart';
+import 'package:spring_button/spring_button.dart';
 
 class ButtonDemo extends StatefulWidget {
   @override
@@ -7,6 +13,9 @@ class ButtonDemo extends StatefulWidget {
 }
 
 class _ButtonDemoState extends State<ButtonDemo> {
+  Timer timer;
+  int counter = 0;
+
   // 普通的漂浮按钮
   final Widget _floatingActionButton = FloatingActionButton(
     onPressed: () {},
@@ -23,6 +32,41 @@ class _ButtonDemoState extends State<ButtonDemo> {
     label: Text('Add'),
     icon: Icon(Icons.add),
   );
+
+  void incrementCounter() {
+    setState(() {
+      counter++;
+    });
+  }
+
+  void decrementCounter() {
+    setState(() {
+      counter--;
+    });
+  }
+
+  Widget row(String text, Color color) {
+    return Padding(
+      padding: EdgeInsets.all(12.5),
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 20),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: const BorderRadius.all(const Radius.circular(10.0)),
+        ),
+        child: Center(
+          child: Text(
+            text,
+            style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 12.5,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 
   /// 操作条
   actionBar() {
@@ -66,6 +110,7 @@ class _ButtonDemoState extends State<ButtonDemo> {
 
   @override
   Widget build(BuildContext context) {
+    var firstColor = Color(0xff5b86e5), secondColor = Color(0xff36d1dc);
     return Scaffold(
       appBar: AppBar(
         title: Text('ButtonDemo'),
@@ -83,7 +128,7 @@ class _ButtonDemoState extends State<ButtonDemo> {
 //      ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(20.0),
+          padding: EdgeInsets.only(top: 20.0, bottom: 60.0, left: 20.0, right: 20.0),
           child: Column(
             children: <Widget>[
               Row(
@@ -253,8 +298,199 @@ class _ButtonDemoState extends State<ButtonDemo> {
                   )
                 ],
               ),
-              Container(
-                child: PopUpMenuButtonDemo(),
+              _buildVerticalGap(),
+              NiceButton(
+                // width: 515,
+                elevation: 8.0,
+                radius: 52.0,
+                text: "Login",
+                background: firstColor,
+                onPressed: () {
+                  print("hello");
+                },
+              ),
+              SizedBox(
+                height: 8.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  NiceButton(
+                    mini: true,
+                    icon: Icons.home,
+                    background: firstColor,
+                    onPressed: () {
+                      print("hello");
+                    },
+                  ),
+                  SizedBox(
+                    width: 8.0,
+                  ),
+                  NiceButton(
+                    elevation: 5,
+                    mini: true,
+                    icon: Icons.label,
+                    gradientColors: [secondColor, firstColor],
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 8.0,
+              ),
+              NiceButton(
+                radius: 40,
+                padding: const EdgeInsets.all(15),
+                text: "Register",
+                icon: Icons.account_box,
+                gradientColors: [secondColor, firstColor],
+                onPressed: () {},
+              ),
+              _buildVerticalGap(),
+              SliderButton(
+                action: () {
+                  ///Do something here OnSlide
+                },
+
+                ///Put label over here
+                label: Text(
+                  "Slide to cancel !",
+                  style: TextStyle(color: Color(0xff4a4a4a), fontWeight: FontWeight.w500, fontSize: 17),
+                ),
+                icon: Center(
+                    child: Icon(
+                  Icons.power_settings_new,
+                  color: Colors.white,
+                  size: 40.0,
+                  semanticLabel: 'Text to announce in accessibility modes',
+                )),
+
+                ///Change All the color and size from here.
+                width: 230,
+                radius: 10,
+                buttonColor: Color(0xffd60000),
+                backgroundColor: Color(0xff534bae),
+                highlightedColor: Colors.white,
+                baseColor: Colors.red,
+              ),
+              _buildVerticalGap(),
+              SliderButton(
+                action: () {
+                  ///Do something here
+                  Navigator.of(context).pop();
+                },
+                label: Text(
+                  "Slide to cancel Event",
+                  style: TextStyle(color: Color(0xff4a4a4a), fontWeight: FontWeight.w500, fontSize: 17),
+                ),
+                icon: Text(
+                  "x",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w400,
+                    fontSize: 44,
+                  ),
+                ),
+              ),
+              _buildVerticalGap(),
+              SpringButton(
+                SpringButtonType.OnlyScale,
+                row(
+                  "Increment",
+                  Colors.deepPurpleAccent,
+                ),
+                onTapDown: (_) => incrementCounter(),
+                onLongPress: () => timer = Timer.periodic(
+                  const Duration(milliseconds: 100),
+                  (_) => incrementCounter(),
+                ),
+                onLongPressEnd: (_) {
+                  timer?.cancel();
+                },
+              ),
+              SpringButton(
+                SpringButtonType.OnlyScale,
+                row(
+                  "Decrement",
+                  Colors.redAccent,
+                ),
+                onTapDown: (_) => decrementCounter(),
+                onLongPress: () => timer = Timer.periodic(
+                  const Duration(milliseconds: 100),
+                  (_) => decrementCounter(),
+                ),
+                onLongPressEnd: (_) {
+                  timer?.cancel();
+                },
+              ),
+              _buildVerticalGap(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  PimpedButton(
+                    particle: DemoParticle(),
+                    pimpedWidgetBuilder: (context, controller) {
+                      return FloatingActionButton(
+                        onPressed: () {
+                          controller.forward(from: 0.0);
+                        },
+                      );
+                    },
+                  ),
+                  PimpedButton(
+                    particle: RectangleDemoParticle(),
+                    pimpedWidgetBuilder: (context, controller) {
+                      return RaisedButton(
+                        onPressed: () {
+                          controller.forward(from: 0.0);
+                        },
+                        child: Text("Special button"),
+                      );
+                    },
+                  ),
+                ],
+              ),
+              _buildVerticalGap(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  PimpedButton(
+                    particle: Rectangle2DemoParticle(),
+                    pimpedWidgetBuilder: (context, controller) {
+                      return MaterialButton(
+                        onPressed: () {
+                          controller.forward(from: 0.0);
+                        },
+                        child: Text("Special button"),
+                      );
+                    },
+                  ),
+                  PimpedButton(
+                    particle: Rectangle2DemoParticle(),
+                    pimpedWidgetBuilder: (context, controller) {
+                      return IconButton(
+                        icon: Icon(Icons.favorite_border),
+                        color: Colors.indigo,
+                        onPressed: () {
+                          controller.forward(from: 0.0);
+                        },
+                      );
+                    },
+                  )
+                ],
+              ),
+              PimpedButton(
+                particle: ListTileDemoParticle(),
+                pimpedWidgetBuilder: (context, controller) {
+                  return ListTile(
+                    title: Text("ListTile"),
+                    subtitle: Text("Some nice subtitle"),
+                    trailing: Icon(Icons.add),
+                    onTap: () {
+                      controller.forward(from: 0.0);
+                    },
+                  );
+                },
               ),
             ],
           ),
@@ -262,53 +498,16 @@ class _ButtonDemoState extends State<ButtonDemo> {
       ),
     );
   }
-}
 
-class PopUpMenuButtonDemo extends StatefulWidget {
-  @override
-  _PopUpMenuButtonDemoState createState() => _PopUpMenuButtonDemoState();
-}
+  Widget _buildVerticalGap() {
+    return SizedBox(
+      height: 20.0,
+    );
+  }
 
-class _PopUpMenuButtonDemoState extends State<PopUpMenuButtonDemo> {
-  String _selectedMenu = 'Home';
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        alignment: Alignment.topCenter,
-        height: 200,
-        child: Container(
-          width: 160,
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.black, width: 1),
-              borderRadius: BorderRadius.all(Radius.circular(100.0))),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(_selectedMenu),
-              PopupMenuButton(
-                onSelected: (val) {
-                  _selectedMenu = val;
-                  setState(() {});
-                },
-                itemBuilder: (BuildContext context) => [
-                  PopupMenuItem(
-                    value: 'Home',
-                    child: Text('Home'),
-                  ),
-                  PopupMenuItem(
-                    value: 'About',
-                    child: Text('About'),
-                  ),
-                  PopupMenuItem(
-                    value: 'Link',
-                    child: Text('Link'),
-                  )
-                ],
-              )
-            ],
-          ),
-        ));
+  Widget _buildHorizontalGap() {
+    return SizedBox(
+      width: 20.0,
+    );
   }
 }

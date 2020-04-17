@@ -10,9 +10,13 @@ import 'package:flutterappreview/pages/basics/flutter_MDC/card_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/data_table_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/dialog_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/flutter_MDC.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/like_button.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/panel_demo.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/popup_menu.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/progress_button.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/scollable_test.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/scroll_controller_test.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/signin_button.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/toast_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/transform_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/willpopscope.dart';
@@ -90,6 +94,10 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '21.ScrollableController', ScrollableControllerDemo()),
             commonRouteFunc(context, '22.ToastDemo', ToastDemo()),
             commonRouteFunc(context, '23.Transform', TransformDemo()),
+            commonRouteFunc(context, '24.signinButton', SignInPage()),
+            commonRouteFunc(context, '25.ProgressButton', ProgressButtonDemo()),
+            commonRouteFunc(context, '26.LikeButton', LikeButtonDemo()),
+            commonRouteFunc(context, '27.PopupMenu', PopupMenuDemo()),
             commonCategoryTitle(context, '二  状态管理'),
             commonRouteFunc(context, '1.StateManagement', StateManagementDemo()),
             commonRouteFunc(context, '2.InheritedWidget', InheritedWidgetDemo()),

@@ -44,6 +44,18 @@ dependencies:
   dashed_container: ^1.0.1
   dotted_border: ^1.0.5
   random_pk: any
+  flutter_signin_button: ^1.0.0
+  nice_button: ^0.1.7
+  slider_button: ^0.5.0
+  spring_button: ^1.0.13
+  pimp_my_button: ^1.0.0
+  flutter_progress_button: ^1.0.0
+  rounded_loading_button: ^1.0.4
+  like_button: ^0.2.0
+  ff_annotation_route: ^2.0.8
+  popup_menu: ^1.0.5
+  mobile_popup: ^1.2.0
+
 
 
 dev_dependencies:
