@@ -55,7 +55,10 @@ dependencies:
   ff_annotation_route: ^2.0.8
   popup_menu: ^1.0.5
   mobile_popup: ^1.2.0
-
+  popup_box: ^0.1.0
+  star_menu: ^1.0.4
+  fab_circular_menu: ^1.0.0
+  hidden_drawer_menu: ^1.1.2
 
 
 dev_dependencies:

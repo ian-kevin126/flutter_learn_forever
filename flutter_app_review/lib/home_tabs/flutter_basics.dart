@@ -12,6 +12,7 @@ import 'package:flutterappreview/pages/basics/flutter_MDC/dialog_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/flutter_MDC.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/like_button.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/panel_demo.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/popup_box.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/popup_menu.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/progress_button.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/scollable_test.dart';
@@ -97,7 +98,8 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '24.signinButton', SignInPage()),
             commonRouteFunc(context, '25.ProgressButton', ProgressButtonDemo()),
             commonRouteFunc(context, '26.LikeButton', LikeButtonDemo()),
-            commonRouteFunc(context, '27.PopupMenu', PopupMenuDemo()),
+            commonRouteFunc(context, '27.PopupMenu1', PopupMenuDemo()),
+            commonRouteFunc(context, '28.PopupMenu2', PopupMenu2()),
             commonCategoryTitle(context, '二  状态管理'),
             commonRouteFunc(context, '1.StateManagement', StateManagementDemo()),
             commonRouteFunc(context, '2.InheritedWidget', InheritedWidgetDemo()),

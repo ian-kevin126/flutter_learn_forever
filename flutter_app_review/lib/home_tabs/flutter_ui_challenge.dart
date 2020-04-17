@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterappreview/common/common.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/fab_circular_menu.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/hidden_drawer_menu.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/star_menu.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/dot_dashed_border.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/shopping_cart/menu_home.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/simple_ui/adidas_ui.dart';
@@ -40,6 +43,9 @@ class _FlutterUIChallengeState extends State<FlutterUIChallenge> {
           commonRouteFunc(context, '11.RandomWordsDemo', RandomWords()),
           commonRouteFunc(context, '12.Shopping', MenuHomePage()),
           commonRouteFunc(context, '13.dot&dashedBorder', DottedAndDashedBorderDemo()),
+          commonRouteFunc(context, '14.StarMenu', StarMenuDemo()),
+          commonRouteFunc(context, '15.FabCircularMenu', FabCircularMenuDemo()),
+          commonRouteFunc(context, '16.HiddenDrawerMenu', HiddenDrawerMenuDemo()),
         ],
       ),
     ));
