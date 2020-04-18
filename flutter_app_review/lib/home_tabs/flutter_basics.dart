@@ -5,11 +5,16 @@ import 'package:flutterappreview/pages/basics/animations/Animation_two.dart';
 import 'package:flutterappreview/pages/basics/animations/animation_basics.dart';
 import 'package:flutterappreview/pages/basics/animations/animation_one.dart';
 import 'package:flutterappreview/pages/basics/animations/staggered_animation.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/awesome_card.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/button_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/card_demo.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/custom_radio_grouped_button.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/data_table_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/dialog_demo.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/flip_card.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/flutter_MDC.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/grouped_button.dart';
+import 'package:flutterappreview/pages/basics/flutter_MDC/grouped_checkbox.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/like_button.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/panel_demo.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/popup_box.dart';
@@ -100,6 +105,11 @@ class _FlutterBasicsState extends State<FlutterBasics> {
             commonRouteFunc(context, '26.LikeButton', LikeButtonDemo()),
             commonRouteFunc(context, '27.PopupMenu1', PopupMenuDemo()),
             commonRouteFunc(context, '28.PopupMenu2', PopupMenu2()),
+            commonRouteFunc(context, '29.GroupedButton1', GroupedButton()),
+            commonRouteFunc(context, '30.GroupedButton2', GroupedButtonExample()),
+            commonRouteFunc(context, '31.GroupedCheckbox', GroupedCheckboxDemo()),
+            commonRouteFunc(context, '32.FlipCardDemo', FlipCardDemo()),
+            commonRouteFunc(context, '33.AwesomeCard', AwesomeCard()),
             commonCategoryTitle(context, '二  状态管理'),
             commonRouteFunc(context, '1.StateManagement', StateManagementDemo()),
             commonRouteFunc(context, '2.InheritedWidget', InheritedWidgetDemo()),

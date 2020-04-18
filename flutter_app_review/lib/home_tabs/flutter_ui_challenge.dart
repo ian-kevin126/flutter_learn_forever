@@ -4,7 +4,11 @@ import 'package:flutterappreview/common/common.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/fab_circular_menu.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/hidden_drawer_menu.dart';
 import 'package:flutterappreview/pages/basics/flutter_MDC/star_menu.dart';
+import 'package:flutterappreview/pages/flutter_ui_challenge/animated_card.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/dot_dashed_border.dart';
+import 'package:flutterappreview/pages/flutter_ui_challenge/expandable_card.dart';
+import 'package:flutterappreview/pages/flutter_ui_challenge/horizontal_data_table.dart';
+import 'package:flutterappreview/pages/flutter_ui_challenge/section_table_view.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/shopping_cart/menu_home.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/simple_ui/adidas_ui.dart';
 import 'package:flutterappreview/pages/flutter_ui_challenge/dashboard_reborn/dashboard_reborn.dart';
@@ -46,6 +50,10 @@ class _FlutterUIChallengeState extends State<FlutterUIChallenge> {
           commonRouteFunc(context, '14.StarMenu', StarMenuDemo()),
           commonRouteFunc(context, '15.FabCircularMenu', FabCircularMenuDemo()),
           commonRouteFunc(context, '16.HiddenDrawerMenu', HiddenDrawerMenuDemo()),
+          commonRouteFunc(context, '17.AnimatedCard', AnimatedCardDemo()),
+          commonRouteFunc(context, '18.ExpandableCard', ExpandableCardDemo()),
+          commonRouteFunc(context, '19.HorizontalDataTable', HorizontalDataTableDemo()),
+          commonRouteFunc(context, '20.SectionTableView', SectionTableViewDemo()),
         ],
       ),
     ));

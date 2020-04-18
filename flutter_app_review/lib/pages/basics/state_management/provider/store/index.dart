@@ -13,13 +13,13 @@ class MyStore {
   //  我们将会在main.dart中runAPP实例化init
   static init({context, child}) {
     return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(builder: (_) => Counter()),
-        ChangeNotifierProvider(builder: (_) => UserModel()),
-        ChangeNotifierProvider(
-          builder: (_) => LocalIntl(),
-        )
-      ],
+//      providers: [
+//        ChangeNotifierProvider(builder: (_) => Counter()),
+//        ChangeNotifierProvider(builder: (_) => UserModel()),
+//        ChangeNotifierProvider(
+//          builder: (_) => LocalIntl(),
+//        )
+//      ],
       child: child,
     );
   }
